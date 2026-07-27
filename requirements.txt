@@ -1,0 +1,22 @@
+# Core dependencies (tested with Python 3.11.11, PyTorch 2.4.0, CUDA)
+torch>=2.0
+torchvision>=0.15
+einops
+numpy
+Pillow
+opencv-python
+scikit-image
+scipy
+tqdm
+
+# Training curves
+matplotlib
+
+# Note: FID / IS / Improved P&R in racd/gen_metrics.py are computed with
+# torchvision's InceptionV3 + scipy only; no extra metric packages needed.
+
+# Optional: Stage-1 ImageNet weight conversion (one-off MXNet -> PyTorch)
+# mxnet
+
+# Optional: legacy PSPNet baseline only (see legacy/)
+# segmentation_models_pytorch
